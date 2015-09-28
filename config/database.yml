@@ -84,4 +84,4 @@ production:
   <<: *default
   database: InfinitelyEpic_production
   username: InfinitelyEpic
-  password: <%= ENV['INFINITELYEPIC_DATABASE_PASSWORD'] %>
+  password: )DLFhg65

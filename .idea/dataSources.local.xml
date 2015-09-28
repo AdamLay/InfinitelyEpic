@@ -4,19 +4,14 @@
     <data-source name="Rails InfinitelyEpic: development" uuid="2fe688e1-c91f-465b-8aea-9c0a5fad07bc">
       <user-name>InfinitelyEpic</user-name>
       <user-password>df83dfeedfe6dfecdfc2dfcddf9cdf9f</user-password>
-      <schema-pattern>InfinitelyEpic_development.pg_catalog InfinitelyEpic_development.public</schema-pattern>
-      <default-schemas>InfinitelyEpic_development.pg_catalog InfinitelyEpic_development.public</default-schemas>
     </data-source>
     <data-source name="Rails InfinitelyEpic: test" uuid="837c3ddd-7a7f-48b4-a03d-78b328ef2e81">
       <user-name>InfinitelyEpic</user-name>
       <user-password>df83dfeedfe6dfecdfc2dfcddf9cdf9f</user-password>
-      <schema-pattern>InfinitelyEpic_test.pg_catalog InfinitelyEpic_test.public</schema-pattern>
-      <default-schemas>InfinitelyEpic_test.pg_catalog InfinitelyEpic_test.public</default-schemas>
     </data-source>
     <data-source name="Rails InfinitelyEpic: production" uuid="c2c207b5-fe45-42e5-b6b9-b7a5d947d79f">
-      <first-sync>true</first-sync>
       <user-name>InfinitelyEpic</user-name>
-      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe3dfe4dfecdfe3dfe4dfe3dffedfefdfe6dff3dfefdffadfe3dfe9dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <user-password>df83dfeedfe6dfecdfc2dfcddf9cdf9f</user-password>
     </data-source>
   </component>
 </project>
