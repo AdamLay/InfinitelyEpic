@@ -146,8 +146,9 @@ aside {
   }
 
   @media (min-width: 768px) {
-    background-color: transparent;
-    border-color: fade-out(white, 0.7);
+    background-color: fade-out($theme-dark, 0.8);
+    //border-color: fade-out($theme-dark, 0.7);
+    border-color: transparent;
 
     .navbar-header .navbar-brand {
       color: fade-out(white, 0.3);
