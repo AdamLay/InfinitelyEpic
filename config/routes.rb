@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   resources 'posts'
 
+  get '/login' => 'authentication#new'
+  post '/login' => 'authentication#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
