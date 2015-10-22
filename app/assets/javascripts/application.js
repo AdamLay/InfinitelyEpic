@@ -13,6 +13,7 @@
 //= require jquery.easing.min
 //= require jquery.fittext
 //= require wow.min
+//= require quill.min
 
 /*!
  * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)

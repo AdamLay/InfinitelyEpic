@@ -22,6 +22,8 @@
 
   <%= stylesheet_link_tag "application", params[:controller] %>
 
+  <%= yield :head %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -78,6 +80,8 @@
     </section>
 
     <%= javascript_include_tag 'application' %>
+
+    <%= yield :scripts %>
 
 </body>
 </html>

@@ -5,7 +5,15 @@ class UsersController < ApplicationController
     end
     
     def create
-        @user = User.new(user_params)
+
+        up = user_params;
+
+        unless up[:password] == up[:password_confirmation]
+            return redirect_to signup_url
+        end
+
+        @user = User.new(up)
+
         if @user.save
             session[:user_id] = @user.id
             redirect_to root_url
@@ -17,6 +25,6 @@ class UsersController < ApplicationController
     def user_params
         params
             .require(:user)
-            .permit(:name, :email, :password, :password_confirmation)
+            .permit(:email, :password, :password_confirmation)
     end
 end

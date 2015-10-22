@@ -85,3 +85,40 @@
     }
   }
 }
+
+.toolbar-container {
+  border: 1px solid $theme-dark;
+  background-color: darken(#FFFFFF, 2);
+  text-align: center;
+
+  &.ql-toolbar .ql-format-group > .ql-format-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  &.ql-toolbar .ql-picker .ql-picker-label {
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+
+    &.ql-toolbar .ql-format-group > .ql-format-button {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.editor-container {
+  border: 1px solid $theme-dark;
+  border-top: none;
+
+  + .btn {
+    margin-top: 15px;
+  }
+}
+
+.form-group {
+  @include sans-serif-font;
+}
