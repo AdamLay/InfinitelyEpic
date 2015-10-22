@@ -294,6 +294,7 @@ aside {
 }
 
 // Button Styles
+/*
 .btn-default {
   @include button-variant($theme-dark, white, white);
 }
@@ -302,17 +303,17 @@ aside {
   @include button-variant(white, $theme-primary, $theme-primary);
   background-image: none;
 }
-
+*/
 .btn {
   @include sans-serif-font;
-  border: none;
-  border-radius: 300px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .btn-xl {
   padding: 15px 30px;
+  border: none;
+  border-radius: 300px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 // Extras
@@ -341,4 +342,13 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: $theme-dark;
+}
+
+.header-pad {
+  padding-top: 60px;
+}
+
+.col-center {
+  margin: auto;
+  float: none;
 }
