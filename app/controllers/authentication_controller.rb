@@ -17,6 +17,6 @@ class AuthenticationController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_url
+    redirect_to root_url, status: 303
   end
 end

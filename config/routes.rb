@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get 'login' => 'authentication#new'
   post 'login' => 'authentication#create'
+  delete 'logout' => 'authentication#destroy'
   
   get 'signup' => 'users#new'
   post 'signup' => 'users#create'

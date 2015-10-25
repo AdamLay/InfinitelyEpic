@@ -24,6 +24,11 @@
 @import "mixins";
 
 // Global Components
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 html,
 body {
   height: 100%;
@@ -32,6 +37,15 @@ body {
 
 body {
   @include serif-font;
+  margin-bottom: $footer-height;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  background-color: $theme-light;
 }
 
 hr {
