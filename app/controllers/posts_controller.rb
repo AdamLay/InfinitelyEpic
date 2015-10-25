@@ -28,11 +28,27 @@ class PostsController < ApplicationController
     if Post.find_by title: title
 
     else
-      @post = Post.new post_params
-      if @post.save
+      post = Post.new post_params
+
+      if post.save
         redirect_to '/posts/' + URI::escape(title)
       end
     end
+  end
+
+  def edit
+    @post = Post.find_by title: params[:id]
+  end
+
+  def update
+
+    title = params[:post][:title]
+
+    post = Post.find_by title: title
+
+    post.update post_params
+
+    redirect_to '/posts/' + URI::escape(title)
   end
 
   private

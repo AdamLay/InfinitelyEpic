@@ -19,7 +19,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
 @import "variables";
 @import "mixins";
 
@@ -158,6 +157,11 @@ aside {
         }
       }
     }
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    border: none;
   }
 
   @media (min-width: 768px) {
@@ -304,8 +308,8 @@ aside {
 }
 
 .no-gutter > [class*='col-'] {
-  padding-right:0;
-  padding-left:0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 // Button Styles
