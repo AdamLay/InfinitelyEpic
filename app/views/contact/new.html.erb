@@ -1,0 +1,19 @@
+<main class="container header-pad">
+  <div class="row">
+    <div class="col-xs-6 col-center">
+      <%= form_for @message, url: contact_path(@message) do |f| %>
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: "form-control" %>
+
+            <%= f.label :email %>
+            <%= f.email_field :email, class: "form-control" %>
+
+            <%= f.label :message %>
+            <%= f.text_area :message, class: "form-control" %>
+          </div>
+          <%= f.submit "Send", :class => "btn btn-default" %>
+      <% end %>
+    </div>
+  </div>
+</main>

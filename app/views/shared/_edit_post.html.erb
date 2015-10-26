@@ -1,14 +1,13 @@
-<main class="header-pad">
-  <div class="container">
+<main class="container header-pad">
 
-    <%= form_for @post, html: {id: 'frmPublish'} do |f| %>
+  <%= form_for @post, html: {id: 'frmPublish'} do |f| %>
 
-        <div class="form-group">
-          <%= f.label :title %>
-          <%= f.text_field :title, class: 'form-control' %>
-        </div>
+      <div class="form-group">
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control' %>
+      </div>
 
-        <div class="toolbar-container">
+      <div class="toolbar-container">
       <span class="ql-format-group">
         <select title="Font" class="ql-font">
           <option value="sans-serif" selected="">Sans Serif</option>
@@ -120,20 +119,19 @@
         <span class="ql-format-separator"></span>
         <span title="List" class="ql-format-button ql-list"></span>
       </span>
-        </div>
-        <div class="editor-container">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+      </div>
+      <div class="editor-container">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-        <%= f.submit "Publish", :class => "btn btn-default" %>
+      <%= f.submit "Publish", :class => "btn btn-default" %>
 
-        <%= f.hidden_field :body %>
+      <%= f.hidden_field :body %>
 
-    <% end %>
+  <% end %>
 
-  </div>
 </main>
 
 <% content_for :scripts do %>

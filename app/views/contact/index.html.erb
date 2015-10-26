@@ -1,0 +1,12 @@
+<main class="container header-pad">
+
+  <% @messages.each do |msg| %>
+
+      <div class="row">
+        <p><%= msg.name + ", " + msg.email %></p>
+        <p><%= msg.message %></p>
+      </div>
+
+  <% end %>
+
+</main>

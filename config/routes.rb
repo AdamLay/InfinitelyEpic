@@ -13,6 +13,10 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   post 'signup' => 'users#create'
 
+  get 'contact' => 'contact#new'
+  post 'contact' => 'contact#create'
+  get 'contact/view' => 'contact#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
